@@ -1,0 +1,12 @@
+[submodule ".devcontainer"]
+	path = .devcontainer
+	url = https://github.com/UOM-EEE-EEEN11202/devcontainer
+[submodule "lab-r/.vscode"]
+	path = lab-r/.vscode
+	url = https://github.com/UOM-EEE-EEEN11202/vscode
+[submodule "lab-s/.vscode"]
+	path = lab-s/.vscode
+	url = https://github.com/UOM-EEE-EEEN11202/vscode
+[submodule "lab-t/.vscode"]
+	path = lab-t/.vscode
+	url = https://github.com/UOM-EEE-EEEN11202/vscode
