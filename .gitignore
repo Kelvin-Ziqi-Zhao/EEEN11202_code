@@ -1,6 +1,6 @@
 # Large data files from labs
-lab-i/data/
-lab-i/src/data/
+lab-i/data/flowers-102
+lab-i/src/data/flowers-102
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
