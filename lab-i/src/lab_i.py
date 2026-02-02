@@ -7,6 +7,16 @@ import scipy.io as sio
 from scipy.signal import find_peaks
 
 
+def set_address(filename):
+    """Set the address of the .mat file"""
+    # Get the path to the .mat file from the current script location
+    script_folder = pathlib.Path(__file__).parent.resolve()
+    data_dir = pjoin(script_folder, "../", "data")
+    mat_fname = pjoin(data_dir, filename)
+
+    return mat_fname
+
+
 def load_waveform_from_mat(filename):
     """
     Load a waveform from a .mat file
@@ -97,7 +107,10 @@ def display_results(t, signal, num_peaks, peak_indices):
 def main():
     # Load waveform from .mat file
     # Try different files: 'ecg.mat', 'sin.mat', 'lab_e.mat'
-    filename = "ecg.mat"
+    file = "ecg.mat"
+
+    # Set address of data file
+    filename = set_address(file)
 
     print(f"Loading waveform from {filename}...")
     t, signal = load_waveform_from_mat(filename)
