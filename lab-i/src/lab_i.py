@@ -125,7 +125,7 @@ def main():
         signal,
         height=None,  # Try: np.mean(signal)
         distance=20,  # Adjust based on your data
-        prominence=0.1,
+        prominence=1,
     )  # Adjust based on your data
 
     # Display results
