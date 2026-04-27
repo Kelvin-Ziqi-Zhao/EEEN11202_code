@@ -1,6 +1,6 @@
 import pytest
 
-# comment 
+# comment
 from src.lab_d import *
 
 
