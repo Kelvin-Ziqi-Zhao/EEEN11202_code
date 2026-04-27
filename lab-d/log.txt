@@ -1,0 +1,10 @@
+WARNING:__main__:9
+WARNING:__main__:8
+WARNING:__main__:7
+WARNING:__main__:6
+WARNING:__main__:5
+WARNING:__main__:4
+WARNING:__main__:3
+WARNING:__main__:2
+WARNING:__main__:1
+WARNING:__main__:0

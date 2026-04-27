@@ -1,31 +1,36 @@
-import math
-
-import plotly.express as px
-
-
-def make_sine_wave():
-    """
-    Make a sine wave signal
-    TO DO: replace range with a numpy array
-
-    Returns: t: time samples
-    v_out: voltage samples
-    """
-    sample_start = 0
-    sample_stop = 100
-    A = 1  # Volts
-    f = 0.1  # Hz
-    t = range(sample_start, sample_stop)  # interpret as representing 1 s, 2 s, 3 s, ...
-    v_out = [A * math.sin(2 * math.pi * f * time) for time in t]
-    return t, v_out
+"""
+Template code for Lab C
+"""
 
 
-def plot_sine_wave(t, v_out):
-    """Plot a sine wave using plotly and label the axes"""
-    fig = px.line(x=t, y=v_out, labels={"x": "Time [s]", "y": "Voltage [V]"})
-    fig.show()
+ def main():
+    min = None
+    # Solution code - Enter your code here
+    filename = "numbers.csv"
+    with open(filename, "r") as f:
+        for line in f:
+            # print(min)
+            num = float(line.strip())
+
+            if num >= 10:
+                if min == None or num <= min:
+                    min = num
+
+    # print(min)
+
+    output_filename = "output.txt"
+    with open(output_filename, "w") as f:
+        if min == None:
+            f.write("Error")
+        else:
+            f.write(str(min))
+        f.write("\n")
+        f.write("Hello. My email address is:\n")
+        f.write("ziqi.zhao-5@student.manchester.ac.uk")
+
+    return
 
 
 if __name__ == "__main__":
-    t, v_out = make_sine_wave()
-    plot_sine_wave(t, v_out)
+    # Solution code - Enter your code here
+    main()
