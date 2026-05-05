@@ -1,3 +1,4 @@
+.DS_Store
 # Large data files from labs
 lab-i/data/flowers-102
 lab-i/src/data/flowers-102
