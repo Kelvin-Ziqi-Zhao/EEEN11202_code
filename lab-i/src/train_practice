@@ -1,0 +1,23 @@
+...
+
+
+def make_data_loaders(training_data, test_data):
+    # Make data loaders
+    batch_size = 128
+    train_dataloader = DataLoader(training_data, batch_size=batch_size)
+    test_dataloader = DataLoader(test_data, batch_size=1)
+
+    return train_dataloader, test_dataloader
+
+
+...
+
+if __name__ == "__main__":
+    # Settings
+    data_folder = "data"  # put in data folder in project root
+    image_size = 500  # images will be resized to 500x500
+
+    # Run network steps
+    training_data, test_data = get_data(data_folder, image_size, clean_run=False)
+    plot_training_label_histogram(training_data)
+    train_dataloader, test_dataloader = make_data_loaders(training_data, test_data)
