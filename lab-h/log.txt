@@ -1,0 +1,3 @@
+WARNING:py.warnings:/workspaces/labs-Kelvin-Ziqi-Zhao/lab-h/src/main.py:26: MyWarning: This is a custom warning from lab-h.
+  warnings.warn("This is a custom warning from lab-h.", MyWarning)
+

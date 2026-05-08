@@ -8,7 +8,7 @@ def main():
     # Set assignment marks for student1
     student1.set_assignment_mark("a", 2)
     student1.set_assignment_mark("b", 5)
-    # student1.set_assignment_mark("c", "apple")  # uncomment to test invalid input
+    student1.set_assignment_mark("c", "apple")  # uncomment to test invalid input
     student1.set_assignment_mark("d", 2.2)
     student1.set_assignment_mark("e", 0)
     student1.set_assignment_mark("f", -3)
